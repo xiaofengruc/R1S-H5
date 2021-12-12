@@ -16,3 +16,31 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 git clone https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
+
+
+echo "luci-app-serverchan"
+if [ ! -d "./luci-app-serverchan" ];then
+git clone https://github.com/tty228/luci-app-serverchan.git
+else
+cd luci-app-serverchan
+git pull
+cd ..
+fi
+
+
+echo "luci-app-kcptun"
+if [ ! -d "./luci-app-kcptun" ];then
+git clone https://github.com/kuoruan/luci-app-kcptun.git package/luci-app-kcptun
+else
+cd luci-app-kcptun
+git pull
+cd ..
+fi
+
+echo "luci-app-ssr-plus"
+if [ ! -d "./luci-app-ssr-plus" ];then
+git clone https://github.com/fw876/helloworld.git
+cd luci-app-ssr-plus
+git pull
+cd ..
+fi
