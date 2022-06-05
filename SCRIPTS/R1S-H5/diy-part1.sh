@@ -15,7 +15,7 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-git clone https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
+#git clone https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 
 if [ ! -d "./package/myapp" ];then
 mkdir ./package/myapp
